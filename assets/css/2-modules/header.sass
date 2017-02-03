@@ -1,0 +1,45 @@
+.header
+    background-color: darken(#fff, 3%)
+    height: 100vh
+    width: 150px
+    position: fixed
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    border-right: 1px solid #fff
+    .logo
+        +hide-text
+        padding: 0
+        margin: 0 auto
+        max-width: 100px
+        width: 100px
+        height: 71px
+
+        background:
+            image: url(/assets/img/logob.png)
+            repeat: no-repeat
+            size: contain
+            position: center
+        &:hover
+            background:
+                image: url(/assets/img/logobh.png)
+
+    nav
+        display: flex
+        flex-direction: column
+        text-align: right
+        a
+            margin-bottom: 15px
+            text-transform: capitalize
+            padding-right: 20px
+            color: lighten(#222, 40%)
+            display: block
+            transition: all 0.3s ease
+            &.active, &:hover
+                color: #222
+    a
+        text-align: right
+        color: #000
+        padding-right: 20px
+        &:hover
+            color: lighten(#000, 20%) 

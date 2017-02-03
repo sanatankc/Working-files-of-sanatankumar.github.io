@@ -1,0 +1,17 @@
+_site
+.idea
+node_modules
+
+
+# Created by https://www.gitignore.io/api/sass,jekyll
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+
+### Jekyll ###
+_site/
+.jekyll-metadata
+
+# End of https://www.gitignore.io/api/sass,jekyll
